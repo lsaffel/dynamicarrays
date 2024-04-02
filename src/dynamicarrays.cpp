@@ -27,5 +27,10 @@ int main()
         cout << *(myArray + i) << "   ";
     }
     cout << endl;
+
+    // now, deallocate the memory that we allocated for myArray
+    delete[]myArray;
+    myArray = NULL;     // it's good practice to do this
+
     return 0;
 }
