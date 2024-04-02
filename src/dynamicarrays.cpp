@@ -21,7 +21,10 @@ int main()
 
     // write out the array
     for (int i = 0; i < size; i++) {
-        cout << myArray[i] << "   ";
+        // cout << myArray[i] << "   ";
+
+        // the name of the array is the address of the first element
+        cout << *(myArray + i) << "   ";
     }
     cout << endl;
     return 0;
